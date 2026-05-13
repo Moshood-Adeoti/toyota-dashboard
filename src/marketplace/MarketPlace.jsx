@@ -54,7 +54,7 @@ const Marketplace = () => {
   />
 </div>
 
-      <div className="grid grid-cols-3 gap-6 mt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
         {filteredCars.map((car, index) => (
           <div key={index} className="bg-white border-2 border-emerald-500 rounded-2xl overflow-hidden cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
             <div>

@@ -45,7 +45,7 @@ const Dashboard = () => {
   </p>
   </div>
 
- <div className='grid grid-cols-3 gap-4 bg-blue-900 text-white p-6 rounded-2xl mt-6'>
+ <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 bg-blue-900 text-white p-6 rounded-2xl mt-6'>
 
   <div className='border-2 border-emerald-500 rounded-lg p-4 bg-white flex items-center gap-4 hover:bg-green-100 cursor-pointer transition duration-300 ease-in-out transform hover:scale-105'>
     <div className='flex gap-[15px] p-4 rounded-lg'>
@@ -82,7 +82,7 @@ const Dashboard = () => {
    </div>
    
 
-   <div className='bg-blue-900 rounded-2xl px-[40px] mt-[40px] py-[20px]'>
+   <div className='bg-blue-900 rounded-2xl px-4 md:px-10 mt-6 py-6 overflow-x-auto'>
       <h2 className='text-2xl font-bold mt-0.5 mb-4 text-white text-center   items-center'>Recent Orders</h2>
 
 <div>
