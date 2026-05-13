@@ -26,7 +26,7 @@ const cars = [
   Coming_soon: "bg-blue-100 text-blue-700"
 }
 
-icon = < CiSearch />
+ 
 
 
 const Marketplace = () => {
@@ -43,15 +43,16 @@ const Marketplace = () => {
         <p className="text-sm mt-2">Browse available Toyota vehicles</p>
       </div>
 
-      <div>
-        <input
-          type="search"
-          placeholder={icon + "Search for cars......"}
-          value={searchCar}
-          onChange={(e) => setSearchCar(e.target.value)}
-          className="w-[80%] p-2 border border-blue-900 rounded mt-4 items-center bg-blue-900 text-white placeholder:text-white mx-auto block"
-        />
-      </div>
+      <div className="relative mt-4">
+  <CiSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-white text-xl" />
+  <input
+    type="search"
+    placeholder="Search for cars..."
+    value={searchCar}
+    onChange={(e) => setSearchCar(e.target.value)}
+    className="w-[80%] p-2 pl-9 border border-blue-900 rounded items-center bg-blue-900 text-white placeholder:text-white mx-auto block"
+  />
+</div>
 
       <div className="grid grid-cols-3 gap-6 mt-6">
         {filteredCars.map((car, index) => (
